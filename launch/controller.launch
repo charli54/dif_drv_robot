@@ -30,4 +30,11 @@ output="screen" />
     <param name="default_topic" value="/sample_robot_diff_drv/cmd_vel"/>
   </node>
 
+
+<!-- *******************COMMUNICATION AVEC ARDUINO********************* -->
+ <node name="serial_communication" pkg="rosserial_python" type="serial_node.py" 
+    args ="/dev/ttyACM0" />
+
+
+
 </launch>
